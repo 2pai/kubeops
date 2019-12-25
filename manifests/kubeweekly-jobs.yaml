@@ -4,7 +4,7 @@ metadata:
   name: kubeweekly-jobs
   namespace: default
 spec:
-  schedule: "*/* * * * 6-7" # will update the yaml file every weekend 
+  schedule: "* 6 * * 6" # will update the yaml file every saturday at 6:00 am 
   jobTemplate:
     spec:
       template:
