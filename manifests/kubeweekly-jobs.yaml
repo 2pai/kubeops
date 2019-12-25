@@ -2,15 +2,16 @@ apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
   name: kubeweekly-jobs
+  namespace: default
 spec:
-  schedule: "*/12 * * * 3"
+  schedule: "*/* * * * 6-7" # will update the yaml file every weekend 
   jobTemplate:
     spec:
       template:
         spec:
           containers:
           - name: kubeweekly
-            image: kubeweekly:latest
+            image: cloudnativeid/kubeweekly:latest
             args:
             - npm run trigger
           restartPolicy: OnFailure
