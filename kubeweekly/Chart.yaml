@@ -7,12 +7,6 @@ description: Kubeweekly scrapper and bot
 keywords:
   - kubeweekly
 home: https://github.com/cloudnative-id/kubeops/kubeweekly/
-#sources:
-#  - A list of URLs to source code for this project (optional)
-maintainers: # (optional)
-  - name: Agung Pratama
-    email: apratama@traveloka.com
-#    url: A URL for the maintainer (optional for each maintainer)
 engine: gotpl # The name of the template engine (optional, defaults to gotpl)
 #icon: A URL to an SVG or PNG image to be used as an icon (optional).
 #appVersion: The version of the app that this contains (optional). This needn't be SemVer.
